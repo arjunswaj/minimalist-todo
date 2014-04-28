@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityObjects>
+    <EntityObject>com.asb.todo.model.eo.Todo</EntityObject>
+    <EntityObject>com.asb.todo.model.eo.Tags</EntityObject>
+</EntityObjects>

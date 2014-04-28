@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asb.todo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.asb.todo.Todos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="entity_object_file"
+            android:value="entity_objects" >
+        </meta-data>
+        <meta-data
+            android:name="database_name"
+            android:value="todo.sqlite" >
+        </meta-data>
+        <meta-data
+            android:name="database_version"
+            android:value="1" >
+        </meta-data>
+
+        <activity
+            android:name="com.asb.todo.NewTodo"
+            android:label="@string/title_activity_new_todo" >
+        </activity>
+        <activity
+            android:name="com.asb.todo.EditTodo"
+            android:label="@string/title_activity_edit_todo" >
+        </activity>
+    </application>
+
+</manifest>
